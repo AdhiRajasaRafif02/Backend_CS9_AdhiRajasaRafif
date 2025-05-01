@@ -1,5 +1,5 @@
 const db = require("../database/pg.database");
-const bcrypt = require("bcrypt");
+const bcrypt = require("bcryptjs");
 
 exports.getUserByEmail = async (email) => {
     try {

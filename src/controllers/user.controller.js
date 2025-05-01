@@ -3,7 +3,7 @@ const storeRepository = require("../repositories/store.repository");
 const itemRepository = require("../repositories/item.repository");
 const baseResponse = require("../utils/baseResponse.util");
 const { v4: uuidv4 } = require("uuid");
-const bcrypt = require("bcrypt");
+const bcrypt = require("bcryptjs");
 
 exports.registerUser = async (req, res) => {
   try {
